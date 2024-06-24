@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/afeka">
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/marginDefualt"
+        android:layout_marginBottom="@dimen/marginDefualt">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/left_arrow"
+            app:iconSize="@dimen/Button_default"
+            style="@style/Widget.Material3.Button.IconButton"
+            app:iconTintMode="multiply"
+            android:gravity="center"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="15"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/right_arrow"
+            app:iconSize="@dimen/Button_default"
+            style="@style/Widget.Material3.Button.IconButton"
+            app:iconTintMode="multiply"
+            android:gravity="center"
+             />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/heart_layout"
+        android:layout_width="@dimen/heart_width"
+        android:layout_height="@dimen/heart_dimention"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_layout"
+        android:layout_marginTop="@dimen/margin_top_default"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/first_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/second_layer"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail1"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail2"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail3"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/second_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/third_layer"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail4"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail5"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail6"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/third_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail7"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail8"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail9"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/forth_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/button_layout"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail10"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail11"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fail12"
+                android:layout_width="@dimen/fail_defualt"
+                android:layout_height="@dimen/fail_defualt"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fail"
+
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/me_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_layout"
+        android:layout_marginBottom="40dp"
+        >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/my_pic_1"
+        android:layout_width="@dimen/my_pic_width_height"
+        android:layout_height="@dimen/my_pic_width_height"
+        app:srcCompat="@drawable/me"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+         />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/my_pic_2"
+        android:layout_width="@dimen/my_pic_width_height"
+        android:layout_height="@dimen/my_pic_width_height"
+        app:srcCompat="@drawable/me"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/my_pic_3"
+        android:layout_width="@dimen/my_pic_width_height"
+        android:layout_height="@dimen/my_pic_width_height"
+        app:srcCompat="@drawable/me"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+
+        />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
