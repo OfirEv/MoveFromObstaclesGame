@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,12 +16,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/Theme.Exe1"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:name =".App"
+        >
+
         <activity
-            android:name=".GameLostActivity"
+            android:name=".Fragments.MapFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments.ListFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments.fragmentActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".startActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,6 +42,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value=""
+            />
+
     </application>
 
 </manifest>

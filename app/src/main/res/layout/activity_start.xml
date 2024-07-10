@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startActivity"
+    android:background="@drawable/car_background">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/startActivityLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="79dp">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/arrows_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/pacifico_regular"
+            android:text="arrows"
+            android:textAllCaps="true"
+            android:textSize="@dimen/pick_text_defualt"
+            android:textStyle="bold|italic" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sensor_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/pacifico_regular"
+            android:text="sensors"
+            android:textAllCaps="true"
+            android:textSize="@dimen/pick_text_defualt"
+            android:textStyle="bold|italic" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/startTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="how do you want to play"
+        android:layout_above="@+id/startActivityLinear"
+        android:layout_centerInParent="true"
+        android:textAllCaps="true"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/blackopsone_regular"
+        android:layout_marginBottom="16dp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/welcomeStartTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/blackopsone_regular"
+        android:text="welcome"
+        android:textAllCaps="true"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nameStartTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/blackopsone_regular"
+        android:text="please enter the name"
+        android:textAllCaps="true"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"/>
+
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/nameStartTextView"
+        android:background="@color/black">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/nameStartTextView"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:inputType="text"
+        />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/trophy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/trophy"
+       />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

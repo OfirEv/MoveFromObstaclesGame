@@ -5,9 +5,12 @@
     <dimen name="default_margin">16dp</dimen>
     <dimen name="right_button_margin">210dp</dimen>
     <dimen name="my_pic_width_height">80dp</dimen>
-    <dimen name="fail_defualt">60dp</dimen>
+    <dimen name="fail_defualt">80dp</dimen>
     <dimen name="marginDefualt">32dp</dimen>
     <dimen name="Button_default">50dp</dimen>
     <dimen name="margin_top_default">60dp</dimen>
     <dimen name="default_try_again_button">80dp</dimen>
+    <dimen name="text_size_default">30sp</dimen>
+    <dimen name="coin_size_default">40dp</dimen>
+    <dimen name="pick_text_defualt">10sp</dimen>
 </resources>
